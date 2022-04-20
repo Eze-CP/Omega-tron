@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact {
+    background-color: rgb(16, 16, 78);
+    color: white;
+    display: flex;
+    padding: 20px 120px;
+}
+
+.left {
+    flex: 1;
+}
+
+.right {
+    flex: 1;
+    text-align: right;
+}
+
+.mail {
+    margin-left: 40px;
+}
+
+.icon {
+    margin-right: 30px;
+}
+
+header {
+    display: flex;
+    padding: 20px 120px;
+}
+
+.logo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.menuItem:hover{
+    /* border-bottom: 4px solid orangered; */
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out;
+}
+
+.logo .companyName {
+    color: rgb(18, 18, 177);
+    font-size: 30px;
+}
+
+.circle {
+    width: 6px;
+    height: 6px;
+    background-color: orangered;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+.menu {
+    list-style: none;
+    /* display: flex; */
+}
+
+.menuItem {
+    display: inline-block;
+}
+
+.menuItem a {
+    color: rgb(18, 18, 177);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menuItem:not(li:last-child) {
+    margin-right: 30px;
+}
+
+.menuItem:last-child {
+    background-color: orangered;
+    padding: 10px 15px;
+}
+
+.menuItem:last-child a {
+    color: white;
+}
+
+.hero {
+    height: 800px;
+    background: url(./img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* padding: 150px 0 0 100px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.inside {
+    letter-spacing: 3px;
+}
+
+.inside h3 {
+    color: rgb(243, 103, 52);
+}
+
+.inside h1 {
+    font-size: 50px;
+    color: rgb(18, 18, 177);
+    margin-top: 8px;
+    margin-bottom: 40px;
+}
+
+.inside a {
+    background-color: orangered;
+    padding: 15px 25px;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.inside a:hover {
+    background-color: rgb(247, 103, 51);
+}
+
+.boxes {
+    display: flex;
+    padding: 50px 150px;
+}
+
+.box {
+    flex: 1;
+    margin: 10px;
+}
+
+.boxes img {
+    width: 100%;
+}
+
+.boxes h2 {
+    margin: 15px 0;
+}
+
+.boxes p {
+    font-size: 19px;
+    line-height: 30px;
+    color: rgb(87, 87, 87);
+}
+
+.box:nth-child(3) {
+    border: 5px solid orangered;
+    padding: 30px;
+    font-size: 32px;
+}
+
+.line {
+    width: 100px;
+    height: 6px;
+    background-color: orangered;
+    margin: 25px 0;
+}
+
+footer {
+    background-color: rgb(16, 16, 78);
+    height: 80px; 
+    color: white;
+    font-size: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
